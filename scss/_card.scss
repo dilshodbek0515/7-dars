@@ -1,0 +1,95 @@
+.card {
+    .card_content {
+        max-width: 1250px;
+        margin: 0 auto;
+        display: flex;
+        gap: 36px;
+        margin-top: 180px;
+        padding: 0px 20px;
+        overflow: auto;
+        border-radius: 10px;
+
+        .card_child {
+            min-width: 323px;
+            width: 323px;
+            min-height: 470px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .child_img_content {
+                width: 323px;
+                height: 421px;
+                border-radius: 10px;
+                background: #EDF2F4;
+                border-radius: 10px;
+                padding: 16px 17px 16px 10px;
+
+                .sale {
+                    width: 54px;
+                    height: 27px;
+                    border-radius: 20px;
+                    background: #D9D9D9;
+                    box-shadow: 0px 4px 4px 0px #00000040;
+                    border: 1px solid #D9D9D9;
+                    font-family: "Inter400";
+                    font-size: 14px;
+                }
+
+                .card_img {
+                    max-width: 300px;
+                    height: 300px;
+                    margin-top: 20px;
+                }
+            }
+
+            .cards_text {
+                max-width: 220px;
+                font-family: "Inter400";
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.94px;
+                letter-spacing: 0.05em;
+                color: #000000;
+            }
+        }
+    }
+
+    .card_content::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .card_content::-webkit-scrollbar-thumb {
+        background-color: dodgerblue;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    .card {
+        .card_content {
+
+            .card_child {
+                min-width: 200px;
+                width: 200px;
+                min-height: 400px;
+                height: 400px;
+
+
+                .child_img_content {
+                    min-width: 220px;
+                    width: 220px;
+                }
+
+                .child_img_content {
+                    .card_img {
+                        max-width: 200px;
+                        height: 200px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

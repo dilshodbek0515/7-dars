@@ -1,0 +1,106 @@
+.main {
+    margin-top: 150px;
+
+    .hero {
+        max-width: 1440px;
+        padding: 0px 76px 0px 71px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .hero_left_content {
+            display: flex;
+            flex-direction: column;
+
+            .hero_text1 {
+                font-family: "Inter400";
+                font-size: 64px;
+                font-weight: 400;
+                line-height: 73.15px;
+            }
+
+            .hero_text2 {
+                max-width: 900px;
+                font-family: "Inter400";
+                font-size: 96px;
+                font-weight: 400;
+                line-height: 100px;
+                color: #F42D2D;
+                margin-bottom: 40px;
+                margin-top: 20px;
+            }
+
+            .hero_btn {
+                width: 183px;
+                height: 60px;
+                border-radius: 20px;
+                background: #FF0000;
+                font-family: "Inter400";
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 37.61px;
+                color: #FFFFFF;
+                cursor: pointer;
+                transition: .5s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #FF0000;
+
+                &:hover {
+                    background: none;
+                    transition: .5s;
+                    color: #FF0000;
+                }
+            }
+        }
+
+        .hero_img {
+            max-width: 450px;
+            height: 450px;
+        }
+
+    }
+}
+
+@media (max-width:1300px) {
+    .main {
+        .hero {
+            .hero_left_content {
+                .hero_text2 {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:970px) {
+    .main {
+        .hero {
+            flex-direction: column-reverse;
+            gap: 30px;
+            padding: 0px 30px;
+
+            .hero_img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .hero_left_content {
+                .hero_text1 {
+                    font-size: 40px;
+                }
+
+                .hero_text2 {
+                    font-size: 36px;
+                    line-height: 50px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

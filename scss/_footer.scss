@@ -1,0 +1,110 @@
+.footer {
+    width: 100%;
+    background-color: #EDF2F4;
+    margin-top: 100px;
+    padding: 0px 20px;
+
+    .footer_content {
+        max-width: 1440px;
+        height: 365px;
+        margin: 0 auto;
+        padding: 100px 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .footer_child1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .f_logo {
+                max-width: 100px;
+                height: 100px;
+            }
+
+            .footer_child1_text {
+                max-width: 156px;
+                font-family: "Inter400";
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.94px;
+                text-align: justified;
+                word-spacing: 5px;
+                color: #000000;
+            }
+        }
+
+        .footer_child2 {
+            .footer_child2_text1 {
+                font-family: "Inter400";
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19.36px;
+                text-align: left;
+                color: #000000;
+                margin-bottom: 20px;
+            }
+
+            .footer_child2_text2 {
+                max-width: 180px;
+                font-family: "Inter400";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: left;
+                color: #000000;
+            }
+        }
+
+        .footer_child3 {
+            .footer_child3_text1 {
+                font-family: "Inter400";
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19.36px;
+                text-align: left;
+                color: #000000;
+                margin-bottom: 20px;
+            }
+
+            .footer_child3_text2 {
+                max-width: 140px;
+                font-family: "Inter400";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: left;
+                color: #000000;
+            }
+        }
+
+        .footer_child4 {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            font-size: 24px;
+            font-family: "Inter400";
+
+            .bi-whatsapp,
+            .bi-facebook,
+            .bi-instagram,
+            .bi-tiktok {
+                margin-right: 15px;
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media (max-width:990px) {
+    .footer {
+        .footer_content {
+            padding: 20px 20px;
+            flex-wrap: wrap;
+            gap: 50px;
+            height: auto;
+        }
+    }
+}

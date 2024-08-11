@@ -1,0 +1,132 @@
+.chose {
+    margin-top: 400px;
+    padding: 0px 20px;
+
+    .chose_content {
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .chose_text1 {
+            width: 23px;
+            height: 79px;
+            border-radius: 10px;
+            background: #FF0404;
+        }
+
+        .chose_text2 {
+            font-family: "Inter400";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.78px;
+            text-align: center;
+            color: #000000;
+            margin-top: 38px;
+            margin-bottom: 160px;
+        }
+
+        .chose_card {
+            max-width: 1440px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 117px;
+
+            .chose_card_child {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 25px;
+
+                .chose_img {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                .chose_card_text1 {
+                    font-family: "Inter400";
+                    font-size: 40px;
+                    font-weight: 600;
+                    line-height: 60px;
+                    text-align: center;
+                    color: #000000;
+                }
+
+                .chose_card_text2 {
+                    max-width: 340px;
+                    font-family: "Inter400";
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 21.78px;
+                    text-align: center;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .chose {
+        .chose_content {
+            .chose_card {
+                grid-gap: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:1080px) {
+    .chose {
+        .chose_content {
+            .chose_card {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 250px;
+            }
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .chose {
+        .chose_content {
+            .chose_card {
+                grid-gap: 80px;
+
+                .chose_card_child {
+                    gap: 15px;
+
+                    .chose_card_text1 {
+                        font-size: 22px;
+                    }
+
+                    .chose_card_text2 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1080px) {
+    .chose {
+        .chose_content {
+            .chose_card {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+
+                .chose_card_child {
+                    .chose_card_text2 {
+                        max-width: 600px;
+                    }
+                }
+            }
+        }
+    }
+}
